@@ -16,8 +16,8 @@ To run the code:
  - Run `node roadStatusApp.js x`
 	 - Where x is the name of the road
 
-##Tests
-Run the standard `npm test` or `npm run testWatch
+## Tests
+Run the standard `npm test` or `npm run testWatch`
 
 ## Assumptions
 I kept the inputs and the outputs of the program similar to the example shown in the Word document. However, Node.js handles arguments is slightly different to .NET. An array is passed into the process through the globally scoped process.argv. The first two entities are the location of where Node is installed, and the location of the file which was ran. I therefore I assume that the 3rd input will always be the road name. This is slightly messy and as I suggested in a comment my preferred option would be either using the Readline functionality built into Node, or specifying 'roadname=x' and then do a find and then substring on the process.argsv array for the string 'roadname='.   
