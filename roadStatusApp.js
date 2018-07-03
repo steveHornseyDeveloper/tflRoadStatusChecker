@@ -5,7 +5,7 @@ runApplication(args)
 
 async function runApplication (args) {
 	try {
-		var roadName = getRoadNameFromArgs(args)
+		const roadName = getRoadNameFromArgs(args)
 		const status = await roadStatusChecker(roadName)
 		logRoadStatus(status)
 	} catch (error) {

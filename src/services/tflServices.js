@@ -5,10 +5,10 @@ module.exports.getRoadStatus = async (dependencies, roadName) => {
 
 	const baseUrl = apiConfig.tflUrl
 	const authenticationString = generateAuthenticationString(authenticationParams)
-	var response = await fetch(`${baseUrl}/road/${roadName}?${authenticationString}`)
+	const response = await fetch(`${baseUrl}/road/${roadName}?${authenticationString}`)
 
 	const status = response.status
-	var json = await response.json()
+	const json = await response.json()
 
 	if (status === 200) {
 		return new Road(json[0])
