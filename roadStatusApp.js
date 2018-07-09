@@ -1,4 +1,4 @@
-const roadStatusChecker = require('./src/providers/roadStatusChecker')
+const roadStatusChecker = require('./src/providers/roadStatusCheckerProvider')
 
 const args = process.argv
 runApplication(args)
